@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spatial Computing Hackathon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #4f46e5, #3b82f6);
+            color: white;
+            text-align: center;
+            padding: 1.5em 0;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header p {
+            margin: 0.5em 0 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2em auto;
+        }
+        section {
+            margin: 2em 0;
+            padding: 1.5em;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            margin-top: 0;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5em;
+        }
+        .feature {
+            flex: 1 1 calc(33.333% - 1em);
+            background: #eef2ff;
+            border-radius: 8px;
+            padding: 1em;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .feature h3 {
+            margin: 0.5em 0;
+        }
+        .zoom-button {
+            display: inline-block;
+            margin: 1em 0;
+            padding: 0.5em 1em;
+            font-size: 1.1em;
+            color: white;
+            background: #3b82f6;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .zoom-button:hover {
+            background: #2563eb;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background: #1f2937;
+            color: white;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Spatial Computing for the Future</h1>
+        <p>Enhancing your perception with cutting-edge technology</p>
+    </header>
+    <div class="container">
+        <section>
+            <h2>About the App</h2>
+            <p>Our revolutionary spatial computing app integrates seamlessly with AR glasses, leveraging advanced technologies to provide real-time environmental awareness, subtitle generation, and translation capabilities. Whether navigating a busy street or engaging in conversations, this app makes the world more accessible and interactive.</p>
+            <img src="https://via.placeholder.com/1200x400" alt="Visualization of the AR glasses in action">
+        </section>
+        <section>
+            <h2>Key Features</h2>
+            <div class="features">
+                <div class="feature">
+                    <img src="https://via.placeholder.com/300" alt="Environmental Awareness">
+                    <h3>Environmental Awareness</h3>
+                    <p>Detects and highlights critical objects like vehicles and people around you, offering alerts like "Car approaching from the left."</p>
+                </div>
+                <div class="feature">
+                    <img src="https://via.placeholder.com/300" alt="Real-Time Subtitles">
+                    <h3>Real-Time Subtitles</h3>
+                    <p>Automatically translates speech into on-screen text, enabling seamless communication in multiple languages.</p>
+                </div>
+                <div class="feature">
+                    <img src="https://via.placeholder.com/300" alt="180-Degree Cameras">
+                    <h3>180-Degree Cameras</h3>
+                    <p>Comprehensive surround-view cameras enhance your spatial awareness for an immersive experience.</p>
+                </div>
+                <div class="feature">
+                    <img src="https://via.placeholder.com/300" alt="Zoom Command">
+                    <h3>Zoom Feature</h3>
+                    <p>Activate zoom with a button or voice command to focus on distant objects with precision.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Try the Zoom Feature</h2>
+            <p>Experience the power of our zoom feature now by clicking the button below!</p>
+            <button class="zoom-button" onclick="alert('Zooming in!')">Zoom In</button>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Spatial Computing Hackathon Team</p>
+    </footer>
+</body>
+</html>
+
