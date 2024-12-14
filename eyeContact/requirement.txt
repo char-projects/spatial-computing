@@ -1,0 +1,4 @@
+opencv-python==4.5.3.56
+torch==1.9.0
+ultralytics==0.0.45
+yolov5==6.0.0
