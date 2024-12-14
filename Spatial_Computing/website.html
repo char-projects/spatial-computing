@@ -3,165 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spatial Computing Hackathon</title>
+    <title>IDEA: Integrated Danger Detection App</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
         body {
-            font-family: 'Orbitron', sans-serif;
+            font-family: 'Orbitron', Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background: radial-gradient(circle at center, #1b2735, #090a0f);
-            color: #d9d9d9;
+            background: linear-gradient(135deg, #1e1e2f, #3a3a5f);
+            color: #eee;
             overflow-x: hidden;
         }
         header {
-            background: linear-gradient(135deg, #00c6ff, #0072ff);
-            color: white;
+            background: linear-gradient(90deg, #3f51b5, #2196f3);
+            color: #fff;
+            padding: 2rem 0;
             text-align: center;
-            padding: 4em 0;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
         header h1 {
-            font-size: 3.5em;
             margin: 0;
-            text-transform: uppercase;
-        }
-        header p {
-            margin: 1em 0 0;
-            font-size: 1.5em;
+            font-size: 3rem;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
         }
         .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 2em auto;
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 0 1rem;
         }
         section {
-            margin: 2em 0;
-            padding: 2em;
-            background: rgba(30, 30, 30, 0.8);
-            border-radius: 15px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(10px);
-            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 3rem;
         }
-        section:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+        h2 {
+            color: #ffeb3b;
+            border-bottom: 2px solid #ffeb3b;
+            padding-bottom: 0.5rem;
+            font-size: 2rem;
         }
-        section h2 {
-            margin-top: 0;
-            font-size: 2.8em;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            color: #00e5ff;
+        p, ul {
+            font-size: 1.2rem;
+            margin: 1rem 0;
         }
-        img {
-            max-width: 100%;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        ul {
+            list-style-type: none;
+            padding: 0;
         }
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2em;
+        ul li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.5rem;
         }
-        .feature {
-            flex: 1 1 calc(33.333% - 1em);
-            background: rgba(40, 40, 40, 0.9);
-            border-radius: 12px;
-            padding: 1.5em;
-            text-align: center;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s, background 0.3s;
+        ul li::before {
+            content: '\25BA';
+            position: absolute;
+            left: 0;
+            color: #ff9800;
         }
-        .feature:hover {
-            transform: translateY(-10px);
-            background: rgba(60, 60, 60, 0.95);
+        a {
+            color: #03a9f4;
+            text-decoration: none;
+            transition: color 0.3s ease;
         }
-        .feature h3 {
-            margin: 1em 0 0.5em;
-            font-size: 2em;
-            color: #5fd1f7;
-        }
-        .zoom-button {
-            display: inline-block;
-            margin: 1em 0;
-            padding: 1em 2em;
-            font-size: 1.2em;
-            color: #fff;
-            background: linear-gradient(90deg, #12c2e9, #c471ed);
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-            transition: background 0.3s, transform 0.3s;
-        }
-        .zoom-button:hover {
-            background: linear-gradient(90deg, #c471ed, #f64f59);
-            transform: translateY(-5px);
+        a:hover {
+            color: #ff5722;
+            text-decoration: underline;
         }
         footer {
             text-align: center;
-            padding: 2em;
-            background: #0d1b2a;
-            color: #a9c2ff;
-            font-size: 0.9em;
-            border-top: 2px solid #0072ff;
+            padding: 1.5rem 0;
+            background: linear-gradient(90deg, #3f51b5, #2196f3);
+            color: #fff;
+            margin-top: 3rem;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+        }
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        .project-logo {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .project-logo img {
+            max-width: 150px;
+            height: auto;
+        }
+        .project-name {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #ffeb3b;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+            margin: 1rem 0;
+        }
+        .image-section {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 1rem;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        section {
+            animation: fadeInUp 0.6s ease-in-out;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Spatial Computing for the Future</h1>
-        <p>Enhancing your perception with cutting-edge technology</p>
+        <h1>Integrated Danger Detection App</h1>
     </header>
+
+    <div class="project-logo">
+        <img src="/home/cschnath/Downloads/Leonardo_Phoenix_a_stylized_metallic_futuristic_logo_of_a_simp_3.jpg" alt="Project Logo">
+    </div>
+
+    <div class="project-name">"Eye Contact"</div>
+
     <div class="container">
         <section>
-            <h2>About the App</h2>
-            <p>Our revolutionary spatial computing app integrates seamlessly with AR glasses, leveraging advanced technologies to provide real-time environmental awareness, subtitle generation, and translation capabilities. Whether navigating a busy street or engaging in conversations, this app makes the world more accessible and interactive.</p>
-            <img src="/mnt/data/A_futuristic_concept_illustration_showing_augmente.png" alt="Visualization of the AR glasses in action">
-        </section>
-        <section>
-            <h2>Key Features</h2>
-            <div class="features">
-                <div class="feature">
-                    <img src="/mnt/data/A_close-up_futuristic_concept_image_showing_augmen.png" alt="Environmental Awareness">
-                    <h3>Environmental Awareness</h3>
-                    <p>Detects and highlights critical objects like vehicles and people around you, offering alerts like "Car approaching from the left."</p>
-                </div>
-                <div class="feature">
-                    <img src="/mnt/data/A_futuristic_concept_of_AR_glasses_showing_surr.png" alt="Real-Time Subtitles">
-                    <h3>Real-Time Subtitles</h3>
-                    <p>Automatically translates speech into on-screen text, enabling seamless communication in multiple languages.</p>
-                </div>
-                <div class="feature">
-                    <img src="/mnt/data/A_futuristic_vision_of_180-degree_AR_camera_disp.png" alt="180-Degree Cameras">
-                    <h3>180-Degree Cameras</h3>
-                    <p>Comprehensive surround-view cameras enhance your spatial awareness for an immersive experience.</p>
-                </div>
-                <div class="feature">
-                    <img src="/mnt/data/A_futuristic_zoom_feature_visualization_for_AR.png" alt="Zoom Command">
-                    <h3>Zoom Feature</h3>
-                    <p>Activate zoom with a button or voice command to focus on distant objects with precision.</p>
-                </div>
+            <h2>About the Project</h2>
+            <div class="image-section">
+                <img src="about-placeholder.png" alt="About the project">
             </div>
+            <p>Eye Contact is an innovative application designed to enhance user safety by detecting potential dangers in the environment. By leveraging cutting-edge technologies such as computer vision, spatial computing, and AR frameworks, IDEA aims to alert users to dangers through visual and auditory signals, minimizing distractions and ensuring a safer user experience.</p>
         </section>
+
         <section>
-            <h2>Try the Zoom Feature</h2>
-            <p>Experience the power of our zoom feature now by clicking the button below!</p>
-            <button class="zoom-button" onclick="activateZoom()">Zoom In</button>
+            <h2>Core Features</h2>
+            <ul>
+                <li><strong>Danger Detection:</strong> Identifies hazards such as vehicles, obstacles, and environmental risks.</li>
+                <li><strong>Real-Time Alerts:</strong> Provides visual, auditory, and haptic feedback to notify users of potential dangers.</li>
+                <li><strong>Customizability:</strong> Users can tailor the application to their specific environments and needs.</li>
+                <li><strong>Scalability:</strong> Designed for integration with smart cities and future technologies like Neuralink.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Technologies Used</h2>
+            <ul>
+                <li><strong>Computer Vision:</strong> OpenCV, TensorFlow Lite, PyTorch Mobile.</li>
+                <li><strong>AR Frameworks:</strong> ARKit, ARCore, MRTK.</li>
+                <li><strong>Object Detection Models:</strong> YOLOv5, SSD, custom-trained models.</li>
+                <li><strong>Audio Feedback APIs:</strong> Google Text-to-Speech, Amazon Polly.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Applications</h2>
+            <div class="image-section">
+                <img src="applications-placeholder.png" alt="Applications">
+            </div>
+            <ul>
+                <li>Pedestrian Safety: Alerts for oncoming vehicles and obstacles.</li>
+                <li>Industrial Safety: Hazard detection for workers.</li>
+                <li>Accessibility: Assistance for visually impaired users.</li>
+                <li>Emergency Response: Dangers highlighted in disaster zones.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Development Roadmap</h2>
+            <ol>
+                <li>Prototyping: Select hardware and build core functionalities using pre-trained models.</li>
+                <li>Integration: Implement real-time alerts and spatial awareness capabilities.</li>
+                <li>Testing: Conduct simulations and real-world testing to refine the application.</li>
+                <li>Deployment: Package for target platforms and enable cloud-based updates.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Resources and References</h2>
+            <ul>
+                <li><a href="https://www.sciencedirect.com/science/article/pii/S2589004224007004" target="_blank">ScienceDirect Article on Danger Detection</a></li>
+                <li><a href="https://thesai.org/Publications/ViewPaper?Volume=10&Issue=2&Code=IJACSA&SerialNo=1" target="_blank">Advanced Computing Systems Article</a></li>
+                <li><a href="https://support.apple.com/guide/apple-vision-pro/see-people-around-you-while-immersed-tan3a6602fdd/visionos" target="_blank">Apple Vision Pro Documentation</a></li>
+                <li><a href="https://www.youtube.com/watch?v=Z7Z9pHF8wJc" target="_blank">Video on AR Danger Detection</a></li>
+            </ul>
         </section>
     </div>
-    <footer>
-        <p>&copy; 2024 Spatial Computing Hackathon Team</p>
-    </footer>
 
-    <script>
-        function activateZoom() {
-            alert('Zooming in! Activating enhanced vision...');
-        }
-    </script>
+    <footer>
+        <p>Eye Contact Project &copy; 2024 | Designed for a safer, smarter future.</p>
+	<p>By Edu, Charlotte, Matteo and Melchior</p>
+    </footer>
 </body>
 </html>
 
