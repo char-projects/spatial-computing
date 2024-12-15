@@ -2,7 +2,9 @@
 
 **🔴 Challenge Description**:
 
-Eye Contact is a functional awareness service. Our project will respond internally to an external stimulus in the environment. This will alert you of dangers, getting the information needed such as vehicles, people around you or some obstacles in the way of the internal hardware (cameras, connection between dispositives). Looking to the future, it will use the data collected by **Smart Cities** or **Neuralink**.
+The main idea is to help people with disabilities, and at the same time improve the future of technologies. Do not make them an obstacle, but an **advantage**.
+
+We are doing a functional awareness service. Our project will internally respond to an external stimulus in the environment. This will alert you of external dangers, getting the information needed such as vehicles, people around you or some obstacles in the way of the internal hardware (cameras, connection between dispositives) or looking to the future, using the data collected by **Smart Cities** or **Neuralink**.
 
 **🟠 Team Contributions:**
 
@@ -74,6 +76,8 @@ The weather problem:
 
 **⚫ Future Possibilities:**
 
+\- Improve and add more helping tools like TalkBack for blind people.  
+\- Add some sound recognition, and subtitle generator specially for deaf people.  
 \- Scale by adding more sensors like LIDAR and cameras for **broader coverage.**  
 \- Use **cloud computing** for better data processing and storage.  
 \- Integrate with smart city infrastructure for comprehensive **environmental awareness.**  
