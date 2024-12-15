@@ -7,8 +7,7 @@ import os  # Import the os module
 print("Loading YOLOv5 model...")
 model = torch.hub.load('ultralytics/yolov5', 'yolov5s')  # Pre-trained YOLOv5s
 
-# Open EpocCam feed (use the correct device index for EpocCam)
-cap = cv2.VideoCapture(0)  # Change to the correct device index for EpocCam
+cap = cv2.VideoCapture(0)
 
 if not cap.isOpened():
     print("Error: Could not access the webcam.")
