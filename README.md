@@ -2,7 +2,7 @@
 
 **🔴 Challenge Description**:
 
-We are doing a functional awareness service. Our project will internally respond to an external stimulus in the environment. This will alert you of external dangers, getting the information needed such as vehicles, people around you or some obstacles in the way of the internal hardware (cameras, connection between dispositives) or looking to the future, using the data collected by **Smart Cities** or **Neuralink**.
+Eye Contact is a functional awareness service. Our project will respond internally to an external stimulus in the environment. This will alert you of dangers, getting the information needed such as vehicles, people around you or some obstacles in the way of the internal hardware (cameras, connection between dispositives). Looking to the future, it will use the data collected by **Smart Cities** or **Neuralink**.
 
 **🟠 Team Contributions:**
 
