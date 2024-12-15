@@ -35,7 +35,7 @@ This project uses the YOLOv5 model for object detection on a webcam feed and ove
 1. Ensure you have a `trailer.mp4` file in the project directory. You can change the source to any other video file if needed.
 2. Run the script:
    ```bash
-   python eyeContact/test.py
+   python3 eyeContact/test.py
    ```
 
 ## Configuration
