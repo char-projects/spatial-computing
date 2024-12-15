@@ -21,8 +21,8 @@ This project uses the YOLOv5 model for object detection on a webcam feed and ove
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/yourrepository.git
-   cd yourrepository
+   git clone git@github.com:char-projects/spatial-computing.git spatialComputing
+   cd ./spatialComputing/eyeContact
    ```
 
 2. Install the required dependencies:
