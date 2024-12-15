@@ -60,7 +60,3 @@ This project uses the YOLOv5 model for object detection on a webcam feed and ove
   stop_objects = ['car', 'bicycle']  # Add the object classes you want to stop the video
   reduce_opacity_objects = ['person']  # Add the object classes you want to reduce the opacity
   ```
-
-## License
-
-This project is licensed under the MIT License.
